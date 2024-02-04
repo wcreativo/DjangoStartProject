@@ -1,4 +1,3 @@
-import os
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -88,5 +87,5 @@ CACHES = {
     }
 }
 
-CELERY_BROKER_URL = os.environ.get("CELERY_BROKER", "redis://redis:6739/0")
-CELERY_RESULT_BACKEND = os.environ.get("CELERY_BACKEND", "redis://redis:6739/0")
+CELERY_BROKER_URL = "redis://redis:6739/0"
+CELERY_RESULT_BACKEND = "redis://redis:6739/0"
